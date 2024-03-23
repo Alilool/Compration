@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 
-/* Reset default margin and padding */
 * {
     margin: 0;
     padding: 0;
@@ -9,7 +8,7 @@
 }
 
 body {
-    font-family: "Rubik", sans-serif;
+    font-family: "Alexandria", sans-serif;
     direction: rtl;
     background-color: #f4f4f4;
     line-height: 1.6;
@@ -62,20 +61,14 @@ h2 {
 
 img {
     margin: 20px;
-    width: 400px;
+    width: 800px;
     border-radius: 20px;
     border: 3px solid #3e3e3e;
 }
 
-.video-container {
-    margin: 20px;
-    width: 400px;
-    border-radius: 20px;
-    overflow: hidden;
-}
 
 video {
-    width: 400px;
+    width: 800px;
     height: auto;
 }
 
@@ -86,8 +79,9 @@ video {
 section {
     margin-bottom: 30px;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+    height: 70vh;
 }
 
 section h2 {
@@ -97,7 +91,16 @@ section h2 {
 
 section p {
     color: #555;
-    max-width: 500px;
+    max-width: 700px;
+    font-size: 1.5em;
+    margin-left: 40px;
+    font-weight: bolder;
+    margin-top: 60px;
+    text-align: center;
+}
+
+section div ul {
+    font-size: 1.2em;
 }
 
 .selcted {
@@ -111,56 +114,58 @@ footer {
     text-align: center;
     padding: 1em;
     width: 100%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
+@media (max-width: 1130px) {
+    section {
+        flex-direction: column;
+    }
+}
 
+@media (max-width: 808px) {
+    img {
+        width: 600px;
+    }
+}
 
-@media (max-width: 500px) {
-    h1 {
-        font-size: 1.5em;
+@media (max-width: 600px) {
+    img {
+        width: 500px;
+    }
+
+    section p {
+        font-size: 1.2em;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 520px) {
+    img {
+        width: 400px;
+    }
+
+    li a {
+        font-size: 0.8em;
     }
 
     nav ul li {
-
         margin-right: 10px;
     }
 
     .selcted {
-        font-size: 1em
-    }
-
-}
-
-@media (max-width: 430px) {
-    h1 {
-        font-size: 1.4em;
-    }
-
-    nav ul li {
-        margin-right: 7px;
-    }
-
-    .selcted {
-        font-size: 0.9em;
-        font-weight: 800;
+        font-size: 1.1em;
     }
 }
 
-@media (max-width: 400px) {
-    nav ul li {
-        display: block;
-    }
-
+@media (max-width: 402px) {
     img {
-        margin: 20px;
         width: 300px;
     }
 
-    .video-container {
-        width: 330px;
-    }
-
-    video {
-        width: 330px;
+    nav ul li {
+        display: block;
     }
 }
