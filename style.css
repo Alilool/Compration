@@ -144,4 +144,17 @@ footer {
     nav ul li {
         display: block;
     }
+
+    img {
+        margin: 20px;
+        width: 300px;
+    }
+
+    .video-container {
+        width: 330px;
+    }
+
+    video {
+        width: 330px;
+    }
 }
