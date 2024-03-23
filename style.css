@@ -36,9 +36,15 @@ nav ul li {
     margin-right: 20px;
 }
 
-a {
+li a {
     color: #fff;
     text-decoration: none;
+}
+
+span a {
+    color: blue;
+    font-weight: bolder;
+    font-size: 1.1em;
 }
 
 a:hover {
